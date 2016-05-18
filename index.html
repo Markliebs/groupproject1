@@ -16,14 +16,18 @@
 
 <body>
     <!--Navbar-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
+        
+        <!--Not sure what this is-->
+        <!--<span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>-->
       </button>
                 <a class="navbar-brand" href="#">Wander the World</a>
             </div>
@@ -53,23 +57,22 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#" id="helpButton">Click for Help</a></li>
-
-
             </ul>
         </div>
         </div>
+        </div>
     </nav>
-    <div class="motto">
+    <div class="quote">
         <div class="well well-sm">
             <h2>Not all who wander are lost</h2>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Cuisine            
-<!--<div class="btn-group">
+                    <h3 class="panel-title">Cuisine</h3>
+                    <!--<div class="btn-group">
   <a href="#" class="btn btn-primary btn-sm">Cuisine</a>
   <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span>Cuisine</a>
   <ul class="dropdown-menu">
@@ -77,10 +80,10 @@
     <li><a href="#">Music</a></li>
     <li><a href="#">Culture</a></li>
     <!--<li class="divider"></li>-->
-    <!--<li><a href="#">Separated link</a></li>
+                    <!--<li><a href="#">Separated link</a></li>
   </ul>
-</div>-->
-</h3>
+</div>
+</h3> delete other h3 closing tag once dropdowns are reinstated-->
                 </div>
                 <div class="panel-body" id="food">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis.
@@ -90,10 +93,10 @@
             </div>
 
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Music
+                    <h3 class="panel-title">Music</h3>
                     <!--<div class="btn-group">
   <a href="#" class="btn btn-primary btn-sm">Music</a>
   <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
@@ -102,10 +105,10 @@
     <li><a href="#">Music</a></li>
     <li><a href="#">Culture</a></li>
     <!--<li class="divider"></li>-->
-    <!--<li><a href="#">Separated link</a></li>
+                    <!--<li><a href="#">Separated link</a></li>
   </ul>
-</div>-->
-</h3>
+</div>
+</h3> delete other h3 closing tag once dropdowns are reinstated-->
                 </div>
                 <div class="panel-body" id="music">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis.
@@ -116,11 +119,11 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Culture
-<!--                        
+                    <h3 class="panel-title">Culture</h3>
+                    <!--                        
                         <div class="btn-group">
   <a href="#" class="btn btn-primary btn-sm">Culture</a>
   <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
@@ -129,10 +132,10 @@
     <li><a href="#">Music</a></li>
     <li><a href="#">Culture</a></li>
     <!--<li class="divider"></li>-->
-    <!--<li><a href="#">Separated link</a></li>
+                    <!--<li><a href="#">Separated link</a></li>
   </ul>
-</div>-->
-</h3>
+</div>
+</h3> delete other h3 closing tag once dropdowns are reinstated-->
 
 
                 </div>
@@ -161,16 +164,19 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Instructions</h4>
+                    <h4 class="modal-title">How to use this site</h4>
                 </div>
                 <div class="modal-body">
                     <p>
-                        <h4>Insert witty instructions here</h4>
+
                         <br>
                         <ol>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis sem augue.</li><br>
-                            <li>Nunc at odio sed nisi vestibulum consequat ac nec quam. Ut a metus id leo ultrices bibendum et sed nulla. Mauris sollicitudin orci libero.</li><br>
-                            <li> Integer dictum volutpat leo. Nullam nec ante a risus pulvinar consectetur. Vestibulum lacinia ex non risus hendrerit maximus. Sed facilisis mauris a aliquam tincidunt.</li>
+
+                            <li>Enter the name of the country you wish to search for in the search box at right.</li><br>
+                            <li>Click the "Submit" button.</li><br>
+                            <li>The panels will populate with information about that country's culture, cuisine, and music.</li><br>
+                            <li>Enjoy!</li>
+
                         </ol>
                     </p>
                 </div>
