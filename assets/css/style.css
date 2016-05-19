@@ -3,3 +3,8 @@
     text-justify: auto;
     
 }
+
+input.form-control.textBox {
+    width: 15em;
+}
+
