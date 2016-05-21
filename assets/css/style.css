@@ -8,8 +8,9 @@ input.form-control.textBox {
     width: 15em;
 }
 
-.quickTrip {
+#QuickTripWidget {
     width: 100%;
+    overflow: scroll;
 }
 
 .instHead {
