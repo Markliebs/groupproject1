@@ -8,17 +8,20 @@
     </title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    
 </head>
 
 <body>
+    
     <!--Navbar-->
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <nav class="navbar navbar-inverse">
+            <nav class="navbar navbar-default navnomargin">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -30,6 +33,7 @@
         <span class="icon-bar"></span>-->
       </button>
                         <a class="navbar-brand" href="#">Hang Gilder</a>
+                        <a href="#"><img src="assets/images/hangglider2.png"" width=50px height=50px></a>
                     </div>
 
                     <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -59,6 +63,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary" id="submitSearch2">Submit</button>
                     </form>
+                    
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" id="helpButton">Click for Help</a></li>
                     </ul>
@@ -163,7 +168,7 @@
                 </div>
                 <div class="panel-body" id="transport">
                     
-                    <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="quickTrip">
             <iframe id="QuickTripWidget" allowTransparency="true" src="http://www.quicktrip.com/quicktrip-widget.html?Affiliate=36505e30-1aeb-4af7-886f-1b03527f82b2&Mode=flight&Culture=en-CA" width="100%" height="90" scrolling="no" frameBorder="0"></iframe>
         </div>
                     
@@ -197,6 +202,9 @@
                     <h4 class="modal-title">How to use this site</h4>
                 </div>
                 <div class="modal-body">
+                    <div class="instHead">
+                    <h1><img src="assets/images/hangglider2.png"" width=75px height=75px>Hang Glider<img src="assets/images/hangglider2.png"" width=75px height=75px></h1>
+                    </div>
                     <p>
 
                         <br>
@@ -219,8 +227,10 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

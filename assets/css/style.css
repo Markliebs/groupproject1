@@ -8,3 +8,14 @@ input.form-control.textBox {
     width: 15em;
 }
 
+.quickTrip {
+    width: 100%;
+}
+
+.instHead {
+    text-align: center;
+}
+
+.navnomargin {
+    margin-top: 0px;
+}

@@ -2,8 +2,7 @@
 // 		$('.help').modal('toggle');
 
 // 	});
-	
-	
+
 	$(document).ready(function(){
     $("#helpButton").click(function(){
         $("#help").modal('toggle');
