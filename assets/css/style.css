@@ -21,17 +21,32 @@ input.form-control.textBox {
     margin-bottom: 0px;
 }
 
-.panel1Height {
+.panel1 {
     height: 250px;
     overflow: hidden;
-    
-    
+    /*margin:0px;*/
 }
 
-.panel2Height {
+.panel2 {
     height: 250px;
     overflow: scroll;
-    overflow-x: hidden;   
+    overflow-x: hidden;
+    /*margin: 0px;*/
+    /*margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;   */
+}
+
+.panel3 {
+    /*height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 0px;*/
+    /*margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;   */
 }
 
 #glider {
@@ -39,4 +54,9 @@ input.form-control.textBox {
     height: 100px;
     background-image: url("../images/hanggliderphoto2.png");
     background-size: cover;
+    /*margin: 0px;*/
+    margin-top: 0px;
+    /*margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;  */*/
 }
