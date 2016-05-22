@@ -122,7 +122,7 @@
         <div class="col-lg-9 col-md-6 col-sm-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Common Phrases</h3>
+                    <h3 class="panel-title">Culture and History</h3>
                     <!--<div class="btn-group">
   <a href="#" class="btn btn-primary btn-sm">Music</a>
   <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
@@ -136,23 +136,46 @@
 </div>
 </h3> delete other h3 closing tag once dropdowns are reinstated-->
                 </div>
-                <div class="panel-body panel2" id="phrases">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis.
-                        Vestibulum consectetur dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu
-                        hendrerit pharetra. Fusce eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis. Vestibulum consectetur
-                        dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu hendrerit pharetra. Fusce
-                        eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis.
-                        Vestibulum consectetur dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu
-                        hendrerit pharetra. Fusce eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis. Vestibulum consectetur
-                        dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu hendrerit pharetra. Fusce
-                        eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.
-                    </p>
+                <div class="panel-body panel2" id="wikipedia">
+                    <script type="text/javascript">
+                    //An approach to getting the summary / leading paragrphs / section 0 out of Wikipedia articles within the browser using JSONP with the Wikipedia API:http://en.wikipediaorg/w/api/php
+
+                    var url = "http://en.wikipedia.org/wiki/Stack_Overflow";
+                    var title = url.split("/");
+                    title = title[title.length - 1];
+
+                    //Get Leading paragraphs (section 0)
+                    $.getJSON("http://en.wikipedia.org/w/api.php?action=parse&page=" + title + "&prop=text&section=0&format=json&callback=?", fuction (data) {
+                        for (text in data.parse.text) { var text = data.parse.text[text].split("<p>");
+
+                            var pText = "";
+
+                            for (p in text) {
+                                //Remove html comment
+                                text[p] = text[p].split("<!--");
+                                if (text[p].length > 1 {
+                                    text[p][0] = text[p][0].split(/\r\n|\r|\n/);
+                                    text[p][0] = text[p][0][0];
+                                    text[p][0] += "</p";
+                                }
+                                text[p] = text[p][0];
+
+                    
+                                })
+
+
+
+
+                            }
+ 
+
+
+
+
+                        "}
+                    })
+
+                    
                 </div>
             </div>
         </div>
