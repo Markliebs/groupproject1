@@ -1,0 +1,33 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>app js test</title>
+	<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+</head>
+<body>
+<h1> Hello App!</h1>
+<div class="content" width:"200px" length "300px" id="info">
+
+</div>
+<script type="text/javascript">
+
+$.ajax({
+    type: 'GET',
+    url: 'https://api.test.sabre.com/v1/shop/flights?origin=JFK&destination=LAX&departuredate=2016-07-21&returndate=2016-07-23&onlineitinerariesonly=N&limit=10&offset=1&eticketsonly=N&sortby=totalfare&order=asc&sortby2=departuretime&order2=asc&pointofsalecountry=US',
+    headers: {
+    
+    "Authorization" : 'Bearer T1RLAQJrZpIwy6nDqpWiKAPCdZTaAD037hB0nz8yJPaoOJRyK6McjDBjAACgSvOP/cncNX9pPITdXDzwCiN16lqmgIilaEJToGK4MOsyFVVxM5kzUX/VW57HbaGjVhbV5GFERJ5ImNKtRAgCbDNTvAO2gAVmHu3W3kzHgiv+vi+fi2OAsvPg77nmuWzfMBahjg4M5+Bun7AmRB7m0XaNHchvvOb46mGi9RuQDt3COr4cdRxA8JGVHpc1Qw0HAewQd+8N763ie9c7knk/tQ**'
+	}	
+    //OR
+    //beforeSend: function(xhr) { 
+    //  xhr.setRequestHeader("My-First-Header", "first value"); 
+    //  xhr.setRequestHeader("My-Second-Header", "second value"); 
+    
+}).done(function(data) { 
+    console.log(data);
+});
+
+
+</script>
+</body>
+</html>
