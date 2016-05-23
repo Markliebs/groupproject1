@@ -1,4 +1,4 @@
-var countData = new Firebase("https://trainschedhw.firebaseio.com/");
+var countData = new Firebase("https://hangglider1.firebaseio.com/");
 
 // Button to grab information
 $("#submitSearch").on("click", function () {
@@ -16,15 +16,15 @@ $("#submitSearch").on("click", function () {
 		dest: newDest
     }
 
-    // Uploads employee data to the database
+    // Uploads country data to the database
 	countData.push(newCount);
 
 	// Logs everything to console
-	console.log(newOrigin.org);
-	console.log(newOrigin.dest)
+	console.log(newCount.org);
+	console.log(newCount.dest);
 
 	// Alert
-	alert("Train successfully added!");
+	alert("Ignore this!");
 
 	// Clears all of the text-boxes
 	$("#orgCount").val("");
