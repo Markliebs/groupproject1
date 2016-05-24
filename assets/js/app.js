@@ -34,11 +34,6 @@ $("#submitSearch").on("click", function () {
 
 });
 
-
-
-
-
-
 	$(document).ready(function(){
     $("#helpButton").click(function(){
         $("#help").modal('toggle');
