@@ -33,6 +33,12 @@ $("#submitSearch").on("click", function () {
     return false;
 
 });
+
+
+
+
+
+
 	$(document).ready(function(){
     $("#helpButton").click(function(){
         $("#help").modal('toggle');
