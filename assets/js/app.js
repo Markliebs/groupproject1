@@ -8,9 +8,8 @@ $("#submitSearch").on("click", function () {
 	var newDest = $("#destCount").val().trim();
     console.log(newOrigin);
     console.log(newDest);
-    
-    
-    
+    $('#glider').html("<h2>Flying High In " + newDest + "</h2>");
+ 
     	var newCount = {
 		org: newOrigin,
 		dest: newDest
@@ -24,7 +23,7 @@ $("#submitSearch").on("click", function () {
 	console.log(newCount.dest);
 
 	// Alert
-	alert("Ignore this!");
+	// alert("Ignore this!");
 
 	// // Clears all of the text-boxes
 	// $("#orgCount").val("");
@@ -33,6 +32,8 @@ $("#submitSearch").on("click", function () {
     return false;
 
 });
+
+
 
 	$(document).ready(function(){
     $("#helpButton").click(function(){
