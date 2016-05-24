@@ -36,8 +36,9 @@ $("#submitSearch").on("click", function () {
 	$(document).ready(function(){
     $("#helpButton").click(function(){
         $("#help").modal('toggle');
-		
-		
-		// $('.modalLose').modal('toggle');
     });
 });
+
+$('#cc').html('<script type="text/javascript">var fm="USD";var ft="EUR";var hb="2D6AB4";var hc="FFFFFF";var bb="F0F0F0";var bo="2D6AB4";var tz="timezone";var wh="200x250";var lg="en";</script>');
+
+$('#cd').html('<script type="text/javascript" src="http://www.fxexchangerate.com/converter.php"></script>');
