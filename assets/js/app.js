@@ -26,9 +26,9 @@ $("#submitSearch").on("click", function () {
 	// Alert
 	alert("Ignore this!");
 
-	// Clears all of the text-boxes
-	$("#orgCount").val("");
-	$("#destCount").val("");
+	// // Clears all of the text-boxes
+	// $("#orgCount").val("");
+	// $("#destCount").val("");
 
     return false;
 
@@ -39,6 +39,3 @@ $("#submitSearch").on("click", function () {
     });
 });
 
-$('#cc').html('<script type="text/javascript">var fm="USD";var ft="EUR";var hb="2D6AB4";var hc="FFFFFF";var bb="F0F0F0";var bo="2D6AB4";var tz="timezone";var wh="200x250";var lg="en";</script>');
-
-$('#cd').html('<script type="text/javascript" src="http://www.fxexchangerate.com/converter.php"></script>');

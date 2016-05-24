@@ -55,12 +55,34 @@
         </li>
       </ul>-->
                     <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
+                        <!--<div class="form-group">
                             <input type="text" class="form-control textBox" id="orgCount" placeholder="Enter Origin Country">
+                        </div>-->
+
+                        <div class="form-group">
+                            <label for="select" class="col-lg-4 control-label">Origin</label>
+                            <div class="col-lg-8">
+                                <select class="form-control" id="orgCount">
+          <option>Brazil</option>
+          <option>France</option>
+          <option>Switzerland</option>
+          <option>Turkey</option>
+          <option>United States</option>
+        </select>
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control textBox" id="destCount" placeholder="Enter Destination Country">
+                            <label for="select" class="col-lg-4 control-label">Destination</label>
+                            <div class="col-lg-8">
+                                <select class="form-control" id="destCount">
+          <option>Brazil</option>
+          <option>France</option>
+          <option>Switzerland</option>
+          <option>Turkey</option>
+          <option>United States</option>
+        </select>
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-primary" id="submitSearch">Submit</button>
                     </form>
@@ -82,162 +104,106 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">Currency</h3>
-                    <!--<div class="btn-group">
-  <a href="#" class="btn btn-primary btn-sm">Cuisine</a>
-  <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span>Cuisine</a>
-  <ul class="dropdown-menu">
-    <li><a href="#">Cuisine</a></li>
-    <li><a href="#">Music</a></li>
-    <li><a href="#">Culture</a></li>
-    <!--<li class="divider"></li>-->
-                    <!--<li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-</h3> delete other h3 closing tag once dropdowns are reinstated-->
                 </div>
 
                 <div class="panel-body panel1" id="currency">
-                    <!-- FXEXCHANGERATE.COM EXCHANGE RATE CONVERTER START -->
-                    <div style="width:230px;height:250px;border:1px solid #2D6AB4;background-color:#F0F0F0;">
-                        <div style="background-color:#2D6AB4;height:18px;text-align:center;width:226px; margin:2px 0px 0px 2px;"><a target="new" style="color:#FFFFFF;font-size:14px;font-weight:Bold;font-family:arial; text-decoration:none;" href="http://www.fxexchangerate.com/">Currency Converter</a></div>
-                        <script type="text/javascript">
-                            var fm = "USD";
-                            var ft = "EUR";
-                            var hb = "2D6AB4";
-                            var hc = "FFFFFF";
-                            var bb = "F0F0F0";
-                            var bo = "2D6AB4";
-                            var tz = "timezone";
-                            var wh = "200x250";
-                            var lg = "en";
-                        </script>
-                        <script type="text/javascript" src="http://www.fxexchangerate.com/converter.php"></script>
+
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-6 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Common Phrases</h3>
                     </div>
-                    <!-- FXEXCHANGERATE.COM  EXCHANGE RATE CONVERTER END -->
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-9 col-md-6 col-sm-12">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Common Phrases</h3>
-                    <!--<div class="btn-group">
-  <a href="#" class="btn btn-primary btn-sm">Music</a>
-  <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="#">Cuisine</a></li>
-    <li><a href="#">Music</a></li>
-    <li><a href="#">Culture</a></li>
-    <!--<li class="divider"></li>-->
-                    <!--<li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-</h3> delete other h3 closing tag once dropdowns are reinstated-->
-                </div>
-                <div class="panel-body panel2" id="phrases">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis.
-                        Vestibulum consectetur dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu
-                        hendrerit pharetra. Fusce eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis. Vestibulum consectetur
-                        dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu hendrerit pharetra. Fusce
-                        eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.
-                    </p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis.
-                        Vestibulum consectetur dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu
-                        hendrerit pharetra. Fusce eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.</p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis. Vestibulum consectetur
-                        dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu hendrerit pharetra. Fusce
-                        eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Transportation</h3>
-                    <!--                        
-                        <div class="btn-group">
-  <a href="#" class="btn btn-primary btn-sm">Culture</a>
-  <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="#">Cuisine</a></li>
-    <li><a href="#">Music</a></li>
-    <li><a href="#">Culture</a></li>
-    <!--<li class="divider"></li>-->
-                    <!--<li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-</h3> delete other h3 closing tag once dropdowns are reinstated-->
-
-
-                </div>
-                <div class="panel-body panel3" id="transport">
-
-                    <div class="quickTrip">
-                        <iframe id="QuickTripWidget" allowTransparency="true" src="http://www.quicktrip.com/quicktrip-widget.html?Affiliate=36505e30-1aeb-4af7-886f-1b03527f82b2&Mode=flight&Culture=en-CA" width="100%" height="90" scrolling="no" frameBorder="0"></iframe>
+                    <div class="panel-body panel2" id="phrases">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis.
+                            Vestibulum consectetur dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt
+                            arcu hendrerit pharetra. Fusce eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis. Vestibulum consectetur
+                            dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu hendrerit pharetra.
+                            Fusce eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis.
+                            Vestibulum consectetur dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt
+                            arcu hendrerit pharetra. Fusce eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis. Vestibulum consectetur
+                            dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu hendrerit pharetra.
+                            Fusce eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Transportation</h3>
+                        </div>
+                    <div class="panel-body panel3" id="transport">
 
-    </div>
-
-
-
-
-
-
-    <!--Code for Modal-->
-
-    <div class="modal" id="help">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">How to use this site</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="instHead">
-                        <h1><img src="assets/images/hangglider2.png"" width=75px height=75px>Hang Glider<img src="assets/images/hangglider2.png"" width=75px height=75px></h1>
+                        <div class="quickTrip">
+                            <iframe id="QuickTripWidget" allowTransparency="true" src="http://www.quicktrip.com/quicktrip-widget.html?Affiliate=36505e30-1aeb-4af7-886f-1b03527f82b2&Mode=flight&Culture=en-CA" width="100%" height="90" scrolling="no" frameBorder="0"></iframe>
+                        </div>
                     </div>
-                    <p>
-
-                        <br>
-                        <ol>
-
-                            <li>Enter the name of the country you wish to search for in the search box at right.</li><br>
-                            <li>Click the "Submit" button.</li><br>
-                            <li>The panels will populate with information about that country's culture, cuisine, and music.</li><br>
-                            <li>Enjoy!</li>
-
-                        </ol>
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Click Here To Close This Window</button>
-                    <!--<button type="button" class="btn btn-primary">Save changes</button>-->
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-    <script src="assets/js/bootstrap.min.js" </script>
-        < script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-        integrity = "sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin = "anonymous" >
-    </script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/scripts.js"></script>
+        <div class="row">
+
+        </div>
+
+
+
+
+
+
+        <!--Code for Modal-->
+
+        <div class="modal" id="help">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">How to use this site</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="instHead">
+                            <h1><img src="assets/images/hangglider2.png"" width=75px height=75px>Hang Glider<img src="assets/images/hangglider2.png"" width=75px height=75px></h1>
+                        </div>
+                        <p>
+
+                            <br>
+                            <ol>
+
+                                <li>Enter the name of the country you wish to search for in the search box at right.</li><br>
+                                <li>Click the "Submit" button.</li><br>
+                                <li>The panels will populate with information about that country's culture, cuisine, and music.</li><br>
+                                <li>Enjoy!</li>
+
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Click Here To Close This Window</button>
+                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+        <script src="assets/js/bootstrap.min.js" </script>
+            < script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity = "sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin = "anonymous" >
+        </script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

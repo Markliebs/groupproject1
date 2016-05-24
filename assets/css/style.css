@@ -8,9 +8,9 @@ input.form-control.textBox {
     width: 15em;
 }
 
-#currency {
+/*#currency {
     width: 100%;
-}
+}*/
 
 #QuickTripWidget {
     width: 100%;
@@ -28,13 +28,14 @@ input.form-control.textBox {
 }
 
 .panel1 {
-    height: 250px;
-    overflow: hidden;
+    height: 275px;
+    width: 225px;
+    /*overflow: hidden;*/
     /*margin:0px;*/
 }
 
 .panel2 {
-    height: 250px;
+    height: 275px;
     overflow: scroll;
     overflow-x: hidden;
     /*margin: 0px;*/
