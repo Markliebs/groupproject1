@@ -1,6 +1,7 @@
 <<!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 	<title>app js test</title>
 	<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
 </head>
@@ -31,3 +32,38 @@ $.ajax({
 </script>
 </body>
 </html>
+=======
+    <title>test api</title>
+    <script src="http://code.jquery.com/jquery-1.7.min.js" ></script>
+    <script src="http://code.jquery.com/ui/1.7.0/jquery-ui.js" ></script>
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+
+
+$(function(){
+        $.ajax({url: 'api.openweathermap.org/data/2.5/forecast?id={city ID}' + '956b54ce80ba3b4c2f783ea06abcda82', 
+            method: 'GET'
+
+    })
+
+        .done(function(response){
+
+         console.log(queryURL);
+
+         console.log(response);
+
+         $("#movieView").text(JSON.stringify(response));
+         
+        })
+        //------
+})
+       
+</script>
+</body>
+</html>
+
+>>>>>>> master

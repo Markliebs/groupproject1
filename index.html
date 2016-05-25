@@ -4,24 +4,28 @@
 
 <head>
     <title>
-        Test
+        Hang Glider
     </title>
+    <link rel="icon" type="image/png" href="assets/images/hangglider2.png">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
 </head>
 
 <body>
+
     <!--Navbar-->
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <nav class="navbar navbar-default navnomargin">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         
         <!--Not sure what this is-->
         <!--<span class="sr-only">Toggle navigation</span>
@@ -29,115 +33,76 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>-->
       </button>
-                <a class="navbar-brand" href="#">Wander the World</a>
-            </div>
+                        <a class="navbar-brand" href="#">Hang Gilder</a>
+                        <a href="#"><img src="assets/images/hangglider2.png"" width=50px height=50px></a>
+                    </div>
 
-            <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Not all who wander are lost</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>-->
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control textBox" placeholder="Enter Origin Country">
+                    <form class="navbar-form navbar-left" role="search">
+                        <!--<div class="form-group">
+                            <input type="text" class="form-control textBox" id="orgCount" placeholder="Enter Origin Country">
+                        </div>-->
+                        
+                        <div class="form-group">
+      <label for="select" class="col-lg-4 control-label">Origin</label>
+      <div class="col-lg-8">
+        <select class="form-control" id="orgCount">
+          <option>Brazil</option>
+          <option>France</option>
+          <option>Switzerland</option>
+          <option>Turkey</option>
+          <option selected="selected">United States</option>
+        </select>
+        </div>
+        </div>
+
+                        <div class="form-group">
+      <label for="select" class="col-lg-4 control-label">Destination</label>
+      <div class="col-lg-8">
+        <select class="form-control" id="destCount">
+          <option>Brazil</option>
+          <option selected="selected">France</option>
+          <option>Switzerland</option>
+          <option>Turkey</option>
+          <option>United States</option>
+        </select>
+        </div>
+        </div>
+                        <button type="submit" class="btn btn-primary" id="submitSearch">Submit</button>
+                    </form>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" id="helpButton">Click for Help</a></li>
+                    </ul>
                 </div>
-                <button type="submit" class="btn btn-primary" id="submitSearch1">Submit</button>
-                <div class="form-group">
-                    <input type="text" class="form-control textBox" placeholder="Enter Destination Country">
-                </div>
-                <button type="submit" class="btn btn-primary" id="submitSearch2">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" id="helpButton">Click for Help</a></li>
-            </ul>
         </div>
-        </div>
-        </div>
+    </div>
     </nav>
     <div class="quote">
-        <div class="well well-sm">
+        <div class="well well-sm" id="glider">
             <h2>Not all who wander are lost</h2>
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">Currency</h3>
-                    <!--<div class="btn-group">
-  <a href="#" class="btn btn-primary btn-sm">Cuisine</a>
-  <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span>Cuisine</a>
-  <ul class="dropdown-menu">
-    <li><a href="#">Cuisine</a></li>
-    <li><a href="#">Music</a></li>
-    <li><a href="#">Culture</a></li>
-    <!--<li class="divider"></li>-->
-                    <!--<li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-</h3> delete other h3 closing tag once dropdowns are reinstated-->
+                    
                 </div>
-<<<<<<< HEAD
-<div class="panel-body" id="currency">
-<!-- EXCHANGERATES.ORG.UK US Dollar CURRENCY CONVERTER START -->
-<div style="width:178px;;margin:0;padding:0;border:1px solid #2D6AB4;background:#F0F0F0;">
-    <div style="width:178px;text-align:center;padding:2px 0px;background:#2D6AB4;font-family:arial;font-size:11px;color:#FFFFFF;font-weight:bold;vertical-align:middle;">
-        <img src="http://www.exchangerates.org.uk/images/flags/us.gif" style="padding-right:5px;">
-        <a style="color:#FFFFFF;text-decoration:none;text-transform:uppercase;" href="http://www.exchangerates.org.uk/US-Dollar-USD-currency-table.html"
-            target="_new" title="US Dollar Converter">US Dollar Converter</a></div>
-    <div style="padding:10px;">
-        <script type="text/javascript">
-            var dcf = 'USD';
-var dct = 'EGP';
-var mc = '2D6AB4';
-var mbg = 'F0F0F0';
-var tc = 'FFFFFF';
-var f = 'arial';
-var fc = '000000';
-var tz = '0';
 
-
-        </script>
-        <script type="text/javascript" src="http://www.currency.me.uk/remote/ER-CCCS2-1.php"></script>
-    </div>
-</div>
-<!-- EXCHANGERATES.ORG.UK US Dollar CURRENCY CONVERTER END -->
-</div>
-</div>
+                <div class="panel-body panel1" id="currency">
+                    
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-9 col-md-6 col-sm-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Common Phrases</h3>
-                    <!--<div class="btn-group">
-  <a href="#" class="btn btn-primary btn-sm">Music</a>
-  <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="#">Cuisine</a></li>
-    <li><a href="#">Music</a></li>
-    <li><a href="#">Culture</a></li>
-    <!--<li class="divider"></li>-->
-                    <!--<li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-</h3> delete other h3 closing tag once dropdowns are reinstated-->
+                    <h3 class="panel-title">Hang Location Weather</h3>
+                    
                 </div>
-                <div class="panel-body" id="phrases">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis.
-                        Vestibulum consectetur dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu
-                        hendrerit pharetra. Fusce eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.</p>
+                <div class="panel-body panel2" id="phrases">
+                    <div id="map-canvas"></div>
                 </div>
             </div>
         </div>
@@ -148,39 +113,22 @@ var tz = '0';
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">Transportation</h3>
-                    <!--                        
-                        <div class="btn-group">
-  <a href="#" class="btn btn-primary btn-sm">Culture</a>
-  <a href="#" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
-  <ul class="dropdown-menu">
-    <li><a href="#">Cuisine</a></li>
-    <li><a href="#">Music</a></li>
-    <li><a href="#">Culture</a></li>
-    <!--<li class="divider"></li>-->
-                    <!--<li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-</h3> delete other h3 closing tag once dropdowns are reinstated-->
-
+                    
 
                 </div>
-                <div class="panel-body" id="transport">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus orci eget accumsan blandit. Donec cursus id erat malesuada finibus. Sed in viverra sem, mattis hendrerit nisl. Nullam pellentesque pellentesque risus non convallis.
-                        Vestibulum consectetur dui at velit euismod, a egestas metus auctor. Aliquam non vestibulum sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel congue quam. Aenean gravida nulla ligula, ac tincidunt arcu
-                        hendrerit pharetra. Fusce eleifend ante ut libero fermentum, id cursus dolor auctor. Donec accumsan elementum metus, eget fermentum erat viverra vel.</p>
-                    <p>Vestibulum tincidunt nisl at erat semper, eu facilisis massa faucibus. Cras eget leo dignissim, ultrices purus sed, convallis erat. Praesent condimentum euismod orci ultrices mattis. Morbi at aliquam augue, non rutrum justo. Vivamus
-                        ut rutrum neque, ut sagittis turpis. Integer ultrices, ante ac molestie facilisis, nunc lacus fringilla libero, sit amet ultrices mauris velit et leo. Integer bibendum blandit sem, vel eleifend nunc. Nunc commodo sem arcu, vel
-                        imperdiet odio varius a. Suspendisse id gravida lacus. Aliquam viverra nisi eu sem pellentesque, at tristique massa fermentum. Donec sed magna mi. Praesent ac lorem ut arcu posuere sollicitudin lobortis non ex.</p>
+                <div class="panel-body panel3" id="transport">
+
+                    <div class="quickTrip">
+                        <iframe id="QuickTripWidget" allowTransparency="true" src="http://www.quicktrip.com/quicktrip-widget.html?Affiliate=36505e30-1aeb-4af7-886f-1b03527f82b2&Mode=flight&Culture=en-CA" width="100%" height="90" scrolling="no" frameBorder="0"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-        
-        <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <iframe id="QuickTripWidget" allowTransparency="true" src="http://www.quicktrip.com/quicktrip-widget.html?Affiliate=36505e30-1aeb-4af7-886f-1b03527f82b2&Mode=flight&Culture=en-CA" width="728" height="90" scrolling="no" frameBorder="0"></iframe>
-        </div>
-        </div>
+
+    <div class="row">
+
+    </div>
 
 
 
@@ -197,6 +145,9 @@ var tz = '0';
                     <h4 class="modal-title">How to use this site</h4>
                 </div>
                 <div class="modal-body">
+                    <div class="instHead">
+                        <h1><img src="assets/images/hangglider2.png"" width=75px height=75px>Hang Glider<img src="assets/images/hangglider2.png"" width=75px height=75px></h1>
+                    </div>
                     <p>
 
                         <br>
@@ -204,7 +155,7 @@ var tz = '0';
 
                             <li>Enter the name of the country you wish to search for in the search box at right.</li><br>
                             <li>Click the "Submit" button.</li><br>
-                            <li>The panels will populate with information about that country's culture, cuisine, and music.</li><br>
+                            <li>The panels will populate with information about that country.</li><br>
                             <li>Enjoy!</li>
 
                         </ol>
@@ -217,10 +168,17 @@ var tz = '0';
             </div>
         </div>
     </div>
-
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPhPXNXpSwAei9Htb-j6VAKduo5OwrBeo"></script>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js" </script>
+        < script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity = "sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin = "anonymous" >
+    </script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/weatherMap.js"></script>
 </body>
 
 </html>
