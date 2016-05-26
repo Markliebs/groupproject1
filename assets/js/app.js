@@ -15,7 +15,9 @@ $("#submitSearch").on("click", function () {
     console.log(newDest);
 	console.log(newDest2);
 
-    $('#glider').html("<h2>Flying High In " + newDest + "</h2>");
+	console.log(queryURLBase);
+    $('#glider').html("<h2>Flying High In " + newDest2 + "</h2>");
+
 
 	var newCount = {
 		org: newOrigin,
