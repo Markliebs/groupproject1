@@ -5,14 +5,20 @@ $("#submitSearch").on("click", function () {
 
     // Grabs user input
 	var newOrigin = $("#orgCount").val().trim();
-	var newDest = $("#destCount").val().trim();
+	var newOrigin2 = $( "#orgCount option:selected" ).text();
+	var newDest2 = $("#destCount").val().trim();
+	var newDest = $( "#destCount option:selected" ).text();
     console.log(newOrigin);
+	console.log(newOrigin2);
     console.log(newDest);
+	console.log(newDest2);
     $('#glider').html("<h2>Flying High In " + newDest + "</h2>");
  
     	var newCount = {
 		org: newOrigin,
-		dest: newDest
+		org2: newOrigin2,
+		dest: newDest,
+		dest2: newDest2
     }
 
     // Uploads country data to the database

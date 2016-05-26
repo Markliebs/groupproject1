@@ -3,10 +3,14 @@ var map;
   var request;
   var gettingData = false;
   var openWeatherMapKey = "9c19c9c627eb4c0f2ddad86eef142361"
+  
   function initialize() {
+    lat = "46";
+    long = "2";
+
     var mapOptions = {
       zoom: 4,
-      center: new google.maps.LatLng(50,-50)
+      center: new google.maps.LatLng(lat,long)
     };
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
@@ -127,5 +131,6 @@ var map;
     map.data.forEach(function(feature) {
       map.data.remove(feature);
     });
+    
   };
   google.maps.event.addDomListener(window, 'load', initialize);
