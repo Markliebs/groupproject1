@@ -7,42 +7,40 @@ var openWeatherMapKey = "9c19c9c627eb4c0f2ddad86eef142361"
 
 
 $("#submitSearch").on("click", function () {
-    var newDest = $("#destCount option:selected").text();
+    var newDest = $("#destCount").val().trim();
 // console.log($("#destCount").val());
-console.log(newDest);
-    if (newDest === "United States"){
-        var x = 35;
-        var y= -79;
-  }
-    else if (newDest === "Turkey"){
+    if (newDest == "USD") {
+        var x = 37;
+        var y= 95;
+
+    }
+    else if (newDest == "TRY"){
         var x = 38;
         var y = 35;
     }
-    else if (newDest === "France"){
+    else if (newDest == "EUR"){
         var x = 46;
         var y = 2;
     }
-    else if (newDest === "Switzerland"){
-        var x = 46.8182;
-        var y = 8.2275;
+    else if (newDest == "CHF"){
+        var x = 46;
+        var y = 8;
     }
-    else if (newDest === "Brazil"){
-        var x = -22;
-        var y = -43;
+    else if (newDest == "BPL"){
+        var x = 14;
+        var y = 51;
     }
-    
-    initialize(x,y);
     console.log(x);
     console.log(y);
-
+    initialize(x, y);
 });
 
 function initialize(latitude, longitude) {
 
 
     var mapOptions = {
-        zoom: 6,
-        center: new google.maps.LatLng(latitude,longitude)
+        zoom: 4,
+        center: new google.maps.LatLng(latitude, longitude)
     };
     map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
@@ -56,9 +54,7 @@ function initialize(latitude, longitude) {
             + "<br /><strong>" + event.feature.getProperty("city") + "</strong>"
             + "<br />" + event.feature.getProperty("temperature") + "&deg;c"
             + "<br />" + event.feature.getProperty("weather")
-            + "<br /> Wind Speed:" + event.feature.getProperty("windSpeed") + "KM"
-            + "<br/> Wind Degress:" + event.feature.getProperty("windDegrees")
-            
+            + "<br /> Wind Speed:" + event.feature.getProperty("windSpeed")
         );
         infowindow.setOptions({
             position:{
