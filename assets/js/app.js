@@ -6,9 +6,10 @@ $("#submitSearch").on("click", function () {
     // Grabs user input
 	var newOrigin = $("#orgCount").val().trim();
 	var newOrigin2 = $("#orgCount option:selected").text();
-	var newDest2 = $("#destCount").val().trim();
-	var newDest = $("#destCount option:selected").text();
+	var newDest = $("#destCount").val().trim();
+	var newDest2 = $("#destCount option:selected").text();
 	var queryURLBase = "http://api.fixer.io/latest?base=" + newOrigin;
+	var queryURLBase2 = "http://api.fixer.io/latest?base=" + newDest;
     console.log(newOrigin);
 	console.log(newOrigin2);
     console.log(newDest);
@@ -24,7 +25,16 @@ $("#submitSearch").on("click", function () {
     }
 	$.ajax({ url: queryURLBase, method: "GET" })
 		.done(function (moneyData) {
-			console.log(moneyData.rates[newDest2]);
+			console.log(moneyData.rates[newDest]);
+			var showdRate = moneyData.rates[newDest];
+			$(' #currency1 ').html("<h4>" + newDest2 + "</h4>" + showdRate);
+		})
+
+	$.ajax({ url: queryURLBase2, method: "GET" })
+		.done(function (moneyData) {
+			console.log(moneyData.rates[newOrigin]);
+			var showoRate = moneyData.rates[newOrigin];
+			$(' #currency2 ').html("<h4>" + newOrigin2 + "</h4>" + showoRate );
 
 		})
 
