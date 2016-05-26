@@ -28,7 +28,7 @@ input.form-control.textBox {
 }
 
 .panel1 {
-    height: 275px;
+    height: 128px;
     width: 225px;
     /*overflow: hidden;*/
     /*margin:0px;*/
@@ -46,7 +46,7 @@ input.form-control.textBox {
 }
 
 .panel3 {
-    /*height: 250px;
+    height: 275px;
     overflow: scroll;
     overflow-x: hidden;
     margin: 0px;*/
