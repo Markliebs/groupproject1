@@ -29,14 +29,17 @@ $("#submitSearch").on("click", function () {
 		.done(function (moneyData) {
 			console.log(moneyData.rates[newDest]);
 			var showdRate = moneyData.rates[newDest];
-			$(' #currency1 ').html("<h4>" + newDest2 + "</h4>" + showdRate);
+			$(' #currency1 ').html("<h6>" + newDest2 + "</h6>");
+			$(' #currency1a ').html("<h6>" + showdRate + "</h6>");
+			
 		})
 
 	$.ajax({ url: queryURLBase2, method: "GET" })
 		.done(function (moneyData) {
 			console.log(moneyData.rates[newOrigin]);
 			var showoRate = moneyData.rates[newOrigin];
-			$(' #currency2 ').html("<h4>" + newOrigin2 + "</h4>" + 1.00 );
+			$(' #currency2 ').html("<h6>" + newOrigin2 + "</h6>");
+			$(' #currency2a ').html("<h6>" + 1.00 + "</h6>")
 
 		})
 

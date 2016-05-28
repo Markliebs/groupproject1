@@ -70,3 +70,9 @@ input.form-control.textBox {
 #map-canvas {
       width: 100%;
       height: 100%;
+}
+      
+#ratePanel {
+    width: 100%;
+    text-align: center;
+}
