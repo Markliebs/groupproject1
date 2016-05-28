@@ -36,7 +36,7 @@ $("#submitSearch").on("click", function () {
 		.done(function (moneyData) {
 			console.log(moneyData.rates[newOrigin]);
 			var showoRate = moneyData.rates[newOrigin];
-			$(' #currency2 ').html("<h4>" + newOrigin2 + "</h4>" + showoRate );
+			$(' #currency2 ').html("<h4>" + newOrigin2 + "</h4>" + 1.00 );
 
 		})
 
